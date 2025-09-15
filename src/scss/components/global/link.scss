@@ -1,0 +1,23 @@
+@use "@/scss/helpers" as *;
+
+.link {
+  transition: color var(--anim-normal);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--col-blue-1);
+    border-radius: 12px;
+    outline-offset: 5px;
+  }
+
+  @include hover {
+    color: var(--col-green-1);
+  }
+
+  &:active {
+    color: var(--col-active-1);
+  }
+}

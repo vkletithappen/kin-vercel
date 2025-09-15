@@ -1,0 +1,94 @@
+@use "@/scss/helpers" as *;
+
+.hero {
+  padding-top: fluid(50, 145);
+  padding-bottom: 225px;
+  background-image: url('@/assets/img/hero-img.avif'), url('@/assets/img/hero-bg.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: right calc(50% - 293px) bottom, center top;
+  background-size: auto, cover;
+
+  @include max-1200 {
+    background-size: 70%, cover;
+    background-position: right -95px bottom, center top;
+  }
+
+  @include max-1024 {
+    padding-bottom: 0;
+    background-image: url('@/assets/img/hero-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  &__container {
+
+    @include max-1024 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include max-1024 {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    max-width: 557px;
+    font-weight: 300;
+    font-size: fluid(30, 48);
+    line-height: 1.13;
+    color: var(--col-white);
+
+    @include max-1024 {
+      max-width: 100%;
+      text-align: center;
+
+    }
+  }
+
+  &__text {
+    max-width: 360px;
+    margin-bottom: 30px;
+
+    @include max-1024 {
+      text-align: center;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    @include max-576 {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    display: none;
+
+    @include max-1024 {
+      margin-top: auto;
+      display: block;
+    }
+  }
+}
+
+.btn-hero {
+  @include max-576 {
+    width: 100%;
+  }
+}

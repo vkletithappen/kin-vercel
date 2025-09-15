@@ -1,0 +1,35 @@
+.menu {
+  position: fixed;
+  overflow-y: auto;
+  right: 0;
+  top: 0;
+  z-index: 140;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 100px 50px 50px 50px;
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--col-white);
+  height: 100svh;
+  transform: translateX(100%);
+  transition: transform var(--anim-normal);
+
+  &.is-active {
+    transform: none;
+  }
+
+  &__bottom {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  &__phone {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--col-black-1);
+  }
+}

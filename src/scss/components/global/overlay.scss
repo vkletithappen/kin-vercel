@@ -1,0 +1,19 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: var(--col-overlay);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--anim-fast),
+    visibility var(--anim-fast);
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}

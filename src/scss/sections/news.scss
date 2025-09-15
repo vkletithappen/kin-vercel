@@ -1,0 +1,125 @@
+@use "@/scss/helpers" as *;
+
+.news {
+  padding-top: 28px;
+  margin-bottom: fluid(50, 69);
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35.5px;
+    gap: 20px;
+
+    @include max-768 {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+}
+
+.list-news {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  animation: appearanceFromBottom 0.6s ease-in-out;
+
+  &__item {
+    grid-column: span 2;
+
+    @include max-1024 {
+      grid-column: span 3;
+    }
+
+    @include max-768 {
+      grid-column: span 6;
+    }
+  }
+}
+
+.card-news {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @include hover {
+    .card-news__title {
+      color: var(--col-green-1);
+    }
+
+    .card-news__img {
+      scale: 1.15;
+    }
+
+    .card-news__link {
+      color: var(--col-dark-1);
+      gap: 12px;
+    }
+  }
+
+  &__img-wrapper {
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  &__img {
+    transition: scale 1s;
+
+    @include max-1024 {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 26px;
+    height: 100%;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 11px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--col-dark-2);
+    transition: color var(--anim-normal);
+  }
+
+  &__bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--col-grey-1);
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--col-blue-1);
+    transition: color var(--anim-normal), gap var(--anim-normal);
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+  }
+}

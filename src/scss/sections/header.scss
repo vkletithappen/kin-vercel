@@ -1,0 +1,156 @@
+@use "@/scss/helpers" as *;
+
+.header {
+  position: relative;
+
+
+  &__top {
+
+    @include max-1024 {
+      display: none;
+    }
+  }
+}
+
+.top-header {
+  background-color: var(--col-grey-light-1);
+
+  &--inner {
+    background-color: var(--col-white);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1px;
+    padding-left: 36px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--col-dark-1);
+    background-image: url('@/assets/img/top-header-info-icon.svg');
+    background-repeat: no-repeat;
+    background-position: left 8px center;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+
+  &__personal-account {
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--col-dark-1);
+    background-image: url('@/assets/img/top-header-account-icon.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    transition: color var(--anim-normal);
+  }
+
+  &__btn {
+    padding: 5px 22.5px;
+    min-height: 48px;
+    gap: 16px;
+    border-radius: 0;
+    font-size: 14px;
+
+    &::before {
+      border-radius: 0;
+    }
+  }
+}
+
+.bottom-header {
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 15.5px;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.2);
+  background-color: var(--col-white);
+
+  &--inner {
+    background-color: var(--col-grey-light-1);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: fluid(150, 213);
+    height: auto;
+    margin-right: 33px;
+
+    @include max-1440 {
+      margin-right: 0;
+    }
+  }
+
+  &__nav {
+    @include max-1200 {
+      display: none;
+    }
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    gap: fluid(12, 33)
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__phone {
+    position: relative;
+    top: 3px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--col-black-1);
+
+    @include max-768 {
+      display: none;
+    }
+  }
+
+  &__messengers {
+    @include max-1440 {
+      display: none;
+    }
+  }
+
+  &__search-btn {
+    @include max-576 {
+      display: none;
+    }
+  }
+
+  &__phone-mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--col-dark-1-02);
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--col-dark-1);
+
+    @include max-768 {
+      display: inline-flex;
+    }
+  }
+}

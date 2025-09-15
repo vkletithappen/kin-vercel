@@ -1,0 +1,33 @@
+@use "@/scss/helpers" as *;
+
+.search-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--col-dark-1);
+  background-color: transparent;
+  border: 1px solid var(--col-dark-1-02);
+  transition: color var(--anim-normal), background-color var(--anim-normal), border-color var(--anim-normal);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--col-blue-1);
+    border-radius: 50%;
+  }
+
+  @include hover {
+    color: var(--col-white);
+    background-color: var(--col-dark-1);
+    border-color: var(--col-dark-1);
+  }
+
+  &:active {
+    color: var(--col-green-1);
+  }
+}

@@ -1,0 +1,41 @@
+<section class="reviews">
+  <div class="container">
+    <div class="reviews__header">
+      <h2 class="section-title reviews__title">Отзывы о клинике</h2>
+      <div class="reviews__controls">
+        <div class="reviews__links">
+          <a href="#!" class="base-link">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <rect width="12" height="2" rx="1" />
+              <rect y="5" width="12" height="2" rx="1" />
+              <rect y="10" width="6" height="2" rx="1" />
+            </svg>
+            Все отзывы
+          </a>
+          <button class="btn-reset base-link">Оставить свой отзыв</button>
+        </div>
+        <div class="slider-controls reviews__slider-controls">
+          <button class="btn-reset slider-btn" data-js-slider-previous="reviews">
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.7211 0.277484C11.3494 -0.0924946 10.7467 -0.0924946 10.375 0.277484L0.278791 10.3298C-0.0922221 10.6993 -0.0929193 11.2977 0.276641 11.6681L0.278791 11.6702C0.283439 11.6749 0.288145 11.6792 0.292909 11.6839L10.375 21.7223C10.7468 22.0926 11.3495 22.0926 11.7212 21.7223C12.0929 21.3521 12.0929 20.7522 11.7212 20.382L2.2981 10.9999L11.7211 1.61787C12.0929 1.24766 12.0929 0.647693 11.7211 0.277484Z" />
+            </svg>
+          </button>
+          <div class="slider-pagination slider-pagination--reviews" data-js-slider-pagination="reviews"></div>
+          <button class="btn-reset slider-btn" data-js-slider-next="reviews">
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.278884 21.7225C0.650595 22.0925 1.2533 22.0925 1.62501 21.7225L11.7212 11.6702C12.0922 11.3007 12.0929 10.7023 11.7234 10.3319L11.7212 10.3298C11.7166 10.3251 11.7119 10.3208 11.7071 10.3161L1.62496 0.277656C1.25325 -0.0925531 0.650538 -0.0925532 0.278829 0.277656C-0.0929404 0.647866 -0.0929404 1.24784 0.278828 1.61805L9.7019 11.0001L0.278884 20.3821C-0.092884 20.7523 -0.092884 21.3523 0.278884 21.7225Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="slider-reviews" data-js-slider='{"slidesPerView":1,"breakpoints":{"1024":{"slidesPerView":2,"slidesPerGroup":2}}}'>
+      <div class="swiper slider-reviews__swiper" data-js-slider-swiper="reviews">
+        <div class="swiper-wrapper slider-reviews__swiper-wrapper" data-js-reviews-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,97 @@
+@use "@/scss/helpers" as *;
+
+.dialog {
+  width: fit-content;
+  max-width: calc(100% - var(--container-offset) * 2);
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background-color: transparent;
+
+  transition:
+    display 0.4s allow-discrete,
+    overlay 0.4s allow-discrete;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: closeDialog 0.4s forwards;
+
+  &:focus {
+    outline: none;
+  }
+
+  &[open] {
+    animation: openDialog 0.4s ease forwards;
+  }
+
+  &__inner {
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    border-radius: 12px;
+
+    background-image: url('@/assets/img/dialog-bg-2.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    @include max-768 {
+      padding: 40px 20px 30px 20px;
+    }
+
+    &--video {
+      padding: 0;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    color: var(--col-white);
+    transition: color var(--anim-normal);
+
+    @include hover {
+      color: var(--col-green-1);
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease, background-color 0.4s ease;
+  z-index: 1000;
+
+  &.is-active {
+    background-color: var(--col-overlay);
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+
+@keyframes openDialog {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes closeDialog {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.95) translateY(-100px);
+  }
+}

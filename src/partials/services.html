@@ -1,0 +1,612 @@
+<section class="services">
+  <div class="container">
+    <h2 class="section-title services__title">Предоставляемые услуги</h2>
+    <form action="#!" class="services__form form-services">
+      <input class="input-reset form-services__input" id="form-services-input-id" type="search" placeholder="Введите поисковой запрос">
+      <button class="btn-reset btn btn--white-text btn--blue-bg form-services__btn">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6.43951 12.8726C7.86961 12.8726 9.25881 12.3954 10.3871 11.5166L14.6436 15.7733C14.9616 16.0803 15.4682 16.0715 15.7753 15.7536C16.0749 15.4434 16.0749 14.9516 15.7753 14.6415L11.5188 10.3849C13.6994 7.57777 13.1916 3.53441 10.3846 1.35375C7.57756 -0.826904 3.53433 -0.319104 1.35372 2.48799C-0.826885 5.29508 -0.319097 9.33844 2.48793 11.5191C3.61802 12.397 5.00846 12.8733 6.43951 12.8726ZM3.01943 3.01704C4.90831 1.12809 7.97077 1.12806 9.85968 3.01697C11.7486 4.90589 11.7486 7.96842 9.85975 9.85737C7.97088 11.7463 4.90841 11.7464 3.0195 9.85744C3.01947 9.85741 3.01947 9.85741 3.01943 9.85737C1.13056 7.98222 1.11943 4.93085 2.99454 3.04193C3.00283 3.03361 3.01111 3.02533 3.01943 3.01704Z" />
+        </svg>
+        <span class="btn__text">Найти услугу</span>
+      </button>
+    </form>
+    <div class="services-tabs" data-js-tabs>
+      <div class="services-tabs__tablist" role="tablist" aria-label="Услуги">
+        <button class="btn-reset services-tabs__btn is-active" role="tab" aria-selected="true" aria-controls="services-panel-1" id="services-tab-1" tabindex="0" data-js-tabs-button>
+          <svg class="services-tabs__btn-icon" width="35" height="35" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M33.9746 0H1.02539C0.459102 0 0 0.459102 0 1.02539V27.3848C0 27.9511 0.459102 28.4102 1.02539 28.4102H16.4748V32.9492H12.0084C11.4421 32.9492 10.983 33.4083 10.983 33.9746C10.983 34.5409 11.4421 35 12.0084 35H22.9915C23.5578 35 24.0169 34.5409 24.0169 33.9746C24.0169 33.4083 23.5578 32.9492 22.9915 32.9492H18.5256V28.4102H33.9746C34.5409 28.4102 35 27.9511 35 27.3848V1.02539C35 0.459102 34.5409 0 33.9746 0ZM32.9492 26.3594H2.05078V2.05078H32.9492V26.3594Z" />
+            <path
+              d="M28.3563 17.0551L25.0614 7.28741C24.9533 6.96687 24.694 6.72036 24.3686 6.62835C24.0431 6.53655 23.6932 6.61085 23.4334 6.82741C21.8571 8.14094 19.7499 8.86432 17.5 8.86432C15.2501 8.86432 13.1429 8.14094 11.5665 6.82735C11.3067 6.61085 10.9568 6.53641 10.6313 6.62835C10.3058 6.72036 10.0466 6.96687 9.93846 7.28741L6.64354 17.0551C6.50819 17.4563 6.63342 17.8994 6.95874 18.1706C9.78308 20.5241 13.5268 21.8203 17.5001 21.8203C21.4734 21.8203 25.217 20.5241 28.0412 18.1706C28.3664 17.8994 28.4917 17.4563 28.3563 17.0551ZM17.5001 19.7695C14.2585 19.7695 11.204 18.7996 8.81798 17.0253L11.4394 9.25417C13.1915 10.3325 15.2951 10.9152 17.5 10.9152C19.705 10.9152 21.8085 10.3326 23.5605 9.25424L26.1819 17.0253C23.7961 18.7997 20.7416 19.7695 17.5001 19.7695Z" />
+          </svg>
+          УЗИ
+        </button>
+        <button class="btn-reset services-tabs__btn" role="tab" aria-selected="true" aria-controls="services-panel-2" id="services-tab-2" tabindex="-1" data-js-tabs-button>
+          <svg class="services-tabs__btn-icon services-tabs__btn-icon--second" width="39" height="37" viewBox="0 0 39 37" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M38.5923 9.76196C37.9428 7.21467 36.5583 5.01818 34.5886 3.40994C32.6697 1.84335 30.3188 0.980469 27.9696 0.980469C26.1686 0.980469 24.4503 1.46547 22.8628 2.42178C21.6093 3.17726 20.4819 4.20468 19.4967 5.48711C17.2565 2.56728 14.2989 0.980469 11.0276 0.980469C8.6791 0.980469 6.32938 1.84335 4.4108 3.40994C2.44163 5.01818 1.05745 7.21467 0.407904 9.76166C-0.298174 12.5315 -0.435045 16.9581 2.92515 22.3166C6.0354 27.2764 11.4266 31.8721 18.9495 35.9755C19.12 36.0684 19.3081 36.1151 19.4964 36.1151C19.6847 36.1151 19.8728 36.0687 20.0433 35.9755C27.5682 31.8718 32.9613 27.2762 36.0727 22.3166C39.4344 16.9581 39.2984 12.5318 38.5923 9.76196ZM19.4964 33.6683C10.5792 28.7056 6.16662 23.7835 4.06951 19.6902H7.26308C7.69601 19.6902 8.09144 19.4456 8.28485 19.0588L9.7104 16.2077L13.583 23.9531C13.7764 24.3403 14.1721 24.5848 14.6047 24.5848C15.0374 24.5848 15.4331 24.3403 15.6265 23.9531L19.4991 16.2077L20.9246 19.0588C21.1183 19.4459 21.5138 19.6902 21.9464 19.6902H30.6104C31.2412 19.6902 31.7526 19.1787 31.7526 18.5479C31.7526 17.9171 31.2412 17.4056 30.6104 17.4056H22.6525L20.5212 13.1424C20.3274 12.7553 19.932 12.511 19.4991 12.511C19.0664 12.511 18.671 12.7553 18.4776 13.1424L14.6047 20.8878L10.7322 13.1424C10.5385 12.7553 10.143 12.511 9.7104 12.511C9.27747 12.511 8.88203 12.7553 8.68862 13.1424L6.557 17.4056H3.09386C1.96169 14.0954 2.30893 11.5535 2.62195 10.3264C3.68211 6.16909 7.1384 3.26533 11.0276 3.26533C13.9692 3.26533 16.6298 4.98396 18.5193 8.10403C18.7261 8.44591 19.0965 8.65479 19.4961 8.65479H19.4964C19.8957 8.65479 20.2665 8.44621 20.4735 8.10433C22.3645 4.98396 25.0266 3.26533 27.9696 3.26533C31.8603 3.26533 35.3181 6.16909 36.3783 10.3264C37.1135 13.2102 38.0395 23.3506 19.4964 33.6683Z" />
+          </svg>
+          Функциональная диагностика
+        </button>
+        <button class="btn-reset services-tabs__btn" role="tab" aria-selected="true" aria-controls="services-panel-3" id="services-tab-3" tabindex="-1" data-js-tabs-button>
+          <svg class="services-tabs__btn-icon services-tabs__btn-icon--third" width="38" height="38" viewBox="0 0 38 38" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M34.0272 18.4285V14.9312C34.0272 11.2247 31.0577 8.20928 27.4077 8.20928C23.7577 8.20928 20.7883 11.2247 20.7883 14.9312V30.75C20.7883 33.2287 18.8176 35.2454 16.3954 35.2454H13.6103C11.188 35.2454 9.21737 33.2287 9.21737 30.75V26.6552C13.1611 26.111 16.2082 22.7189 16.2082 18.628V1.58288H12.7285V0.527344H10.502V4.86491H12.7285V3.80945H13.9816V17.5147H2.22656V3.80945H3.49207V4.86498H5.71863V0.527344H3.49207V1.58288H0V18.628C0 22.7188 3.04712 26.1109 6.99081 26.6552V30.7499C6.99081 34.4564 9.9603 37.4719 13.6103 37.4719H16.3954C20.0454 37.4719 23.0149 34.4564 23.0149 30.7499V14.9312C23.0149 12.4524 24.9855 10.4358 27.4077 10.4358C29.8299 10.4358 31.8007 12.4524 31.8007 14.9312V18.4285C29.5301 18.9377 27.8279 20.9684 27.8279 23.3903C27.8279 26.1948 30.1095 28.4763 32.9139 28.4763C35.7184 28.4763 38 26.1948 38 23.3903C38 20.9683 36.2978 18.9377 34.0272 18.4285ZM2.33366 19.7412H13.8745C13.3525 22.4514 10.9643 24.5054 8.10402 24.5054C5.24393 24.5055 2.85564 22.4514 2.33366 19.7412ZM32.9139 26.2499C31.3372 26.2499 30.0544 24.9671 30.0544 23.3904C30.0544 21.8137 31.3372 20.5309 32.9139 20.5309C34.4906 20.5309 35.7734 21.8136 35.7734 23.3903C35.7734 24.967 34.4906 26.2499 32.9139 26.2499Z" />
+          </svg>
+          Консультации врачей
+        </button>
+        <button class="btn-reset services-tabs__btn" role="tab" aria-selected="true" aria-controls="services-panel-4" id="services-tab-4" tabindex="-1" data-js-tabs-button>
+          <svg class="services-tabs__btn-icon" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M29.8659 7.88428C30.1101 8.12842 30.4301 8.25049 30.7499 8.25049C31.07 8.25049 31.3898 8.12842 31.634 7.88428C32.122 7.396 32.122 6.60449 31.634 6.11646L25.8837 0.366211C25.3955 -0.12207 24.604 -0.12207 24.1159 0.366211C23.6276 0.854492 23.6276 1.646 24.1159 2.13403L26.1071 4.12524L24.073 6.15942L19.3816 1.48926C18.8921 1.0022 18.1008 1.00391 17.6137 1.49316C17.1267 1.98242 17.1284 2.77393 17.6176 3.26099L18.9145 4.552L6.21166 17.1765C5.97582 17.4111 5.84301 17.73 5.84301 18.0627C5.84276 18.3955 5.97533 18.7144 6.21117 18.9492L6.98558 19.7202L4.30883 22.3611C4.0703 22.5962 3.93627 22.9172 3.93652 23.2522C3.937 23.5869 4.07153 23.9077 4.31029 24.1423L5.20775 25.0244L0.36621 29.8662C-0.12207 30.3542 -0.12207 31.1458 0.36621 31.634C0.610106 31.8779 0.930174 32 1.25 32C1.57007 32 1.88989 31.8779 2.13403 31.634L6.99071 26.7771L7.93553 27.7056C8.1787 27.9448 8.49535 28.0642 8.81175 28.0642C9.13182 28.0642 9.45164 27.9421 9.69578 27.698L12.3418 25.052L13.1177 25.8245C13.3613 26.0671 13.6804 26.1885 13.9995 26.1885C14.3176 26.1885 14.6357 26.0679 14.8794 25.8264L21.7546 19.0137C21.9912 18.7793 22.1245 18.46 22.1247 18.1267C22.125 17.7937 21.9921 17.4741 21.7561 17.2393L19.0529 14.5518C18.5632 14.0649 17.7717 14.0671 17.2851 14.5569C16.7983 15.0464 16.8005 15.8379 17.29 16.3247L19.1003 18.1243L17.3554 19.853L15.5588 18.1047C15.0637 17.6233 14.2724 17.6343 13.791 18.1289C13.3095 18.6238 13.3205 19.4153 13.8154 19.8967L15.5793 21.613L14.0014 23.1768L8.86571 18.064L20.6865 6.31592L25.8208 11.427L23.6816 13.551C23.1919 14.0376 23.1889 14.8289 23.6752 15.3188C23.9196 15.5649 24.2409 15.6882 24.5625 15.6882C24.8808 15.6882 25.1994 15.5671 25.4431 15.3252L27.5925 13.1907L28.8994 14.4917C29.1433 14.7344 29.4623 14.8557 29.7812 14.8557C30.102 14.8557 30.423 14.7332 30.6672 14.4875C31.1542 13.9983 31.1525 13.207 30.6633 12.7197L25.8449 7.92334L27.8749 5.89307L29.8659 7.88428ZM8.80418 25.054L6.96825 23.2493L8.75731 21.4839L10.5698 23.2883L8.80418 25.054Z" />
+          </svg>
+          Манипуляции под&nbsp;УЗИ
+        </button>
+        <button class="btn-reset services-tabs__btn" role="tab" aria-selected="true" aria-controls="services-panel-5" id="services-tab-5" tabindex="-1" data-js-tabs-button>
+          <svg class="services-tabs__btn-icon" width="31" height="38" viewBox="0 0 31 38" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26.8852 3.57729H20.0802C19.5764 1.52641 17.714 0 15.5001 0C13.286 0 11.4236 1.52641 10.9201 3.57729H4.11476C1.84614 3.57729 0 5.4142 0 7.67178V33.9055C0 36.1631 1.84585 38 4.11476 38H26.8849C29.1542 38 31 36.1634 31 33.9055V7.67178C31.0003 5.4142 29.1542 3.57729 26.8852 3.57729ZM11.9049 5.80385C12.5226 5.80385 13.0238 5.30548 13.0238 4.69057C13.0238 3.33202 14.1345 2.22656 15.5001 2.22656C16.8644 2.22656 17.9742 3.32999 17.9765 4.6868C17.9765 4.68825 17.9762 4.68941 17.9762 4.69057C17.9762 5.30548 18.4771 5.80385 19.0951 5.80385H21.5718V7.67178C21.5718 8.70157 20.7297 9.53972 19.6945 9.53972H11.3055C10.2703 9.53972 9.42823 8.70157 9.42823 7.67178V5.80385H11.9049ZM28.7626 33.9055C28.7626 34.9356 27.9202 35.7734 26.8852 35.7734H4.11476C3.07981 35.7734 2.23774 34.9356 2.23774 33.9055V7.67178C2.23774 6.64171 3.07981 5.80385 4.11476 5.80385H7.19049V7.67178C7.19049 9.92937 9.03634 11.7663 11.3053 11.7663H19.6945C21.9634 11.7663 23.8095 9.92937 23.8095 7.67178V5.80385H26.8849C27.9202 5.80385 28.7623 6.64171 28.7623 7.67178V33.9055H28.7626Z" />
+            <path
+              d="M22.6906 20.2716H19.0158V16.6151C19.0158 16.0002 18.5147 15.5019 17.897 15.5019H13.1033C12.4853 15.5019 11.9844 16.0002 11.9844 16.6151V20.2716H8.30936C7.69165 20.2716 7.19049 20.7699 7.19049 21.3849V26.1549C7.19049 26.7695 7.69165 27.2681 8.30936 27.2681H11.9844V30.9246C11.9844 31.5395 12.4853 32.0379 13.1033 32.0379H17.897C18.515 32.0379 19.0158 31.5395 19.0158 30.9246V27.2681H22.6906C23.3086 27.2681 23.8095 26.7695 23.8095 26.1549V21.3849C23.8095 20.7699 23.3086 20.2716 22.6906 20.2716ZM21.5718 25.0413H17.897C17.279 25.0413 16.7781 25.5399 16.7781 26.1546V29.8113H14.2222V26.1546C14.2222 25.5399 13.721 25.0413 13.1033 25.0413H9.42823V22.4981H13.1033C13.7213 22.4981 14.2222 21.9998 14.2222 21.3849V17.7284H16.7781V21.3849C16.7781 21.9998 17.279 22.4981 17.897 22.4981H21.5718V25.0413Z" />
+          </svg>
+          Анализы
+        </button>
+        <button class="btn-reset services-tabs__btn" role="tab" aria-selected="true" aria-controls="services-panel-6" id="services-tab-6" tabindex="-1" data-js-tabs-button>
+          <svg class="services-tabs__btn-icon" width="32" height="36" viewBox="0 0 32 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.3516 14.708C9.11506 13.4715 7.11354 13.4713 5.87683 14.708L4.38516 16.1996C-0.148905 20.7337 -0.149537 28.0727 4.38516 32.6073C8.90812 37.1303 16.2686 37.1316 20.7953 32.6049L23.1432 30.2414C24.3799 29.0049 24.38 27.0033 23.1432 25.7666C22.8566 25.4799 22.5245 25.255 22.1633 25.0986C23.3329 23.0572 21.9301 20.5003 19.5905 20.3716C19.5484 19.592 19.2247 18.8649 18.6684 18.3085C18.4086 18.0487 18.1146 17.8437 17.8007 17.6933L21.6516 13.8336C22.8881 12.5972 22.8883 10.5955 21.6516 9.35878C20.4179 8.1251 18.4105 8.1251 17.1762 9.35935L11.0944 15.4507L10.3516 14.708ZM18.6684 10.8505C19.0797 10.4392 19.7488 10.4393 20.16 10.8505C20.5707 11.2612 20.574 11.9282 20.1592 12.343C11.8112 20.6906 13.3679 19.1396 11.8432 20.6744C11.4313 21.0863 11.4313 21.7541 11.8432 22.166C12.2551 22.5778 12.9228 22.578 13.3348 22.166C13.5055 21.9951 12.5869 22.9145 15.7916 19.707C16.2047 19.3917 16.7995 19.4227 17.1768 19.8001C17.5841 20.2074 17.5948 20.8738 17.1744 21.2942L14.824 23.66C14.4156 24.0711 14.4136 24.7389 14.8289 25.1516C15.2422 25.5622 15.91 25.5599 16.3205 25.1467L18.6684 22.7832C19.0797 22.372 19.7488 22.372 20.16 22.7832C20.5722 23.1953 20.5723 23.8626 20.16 24.2748C17.2024 27.2332 19.1497 25.2896 17.8031 26.6474C17.3948 27.063 17.4008 27.7308 17.8164 28.1389C18.2319 28.547 18.8996 28.5413 19.3079 28.1256L20.1604 27.2578C20.5725 26.846 21.2394 26.8458 21.6517 27.2581C22.059 27.6654 22.0697 28.3317 21.6492 28.7522L19.3013 31.1156C15.6001 34.8167 9.57794 34.8168 5.87676 31.1156C2.16714 27.406 2.16658 21.4013 5.87676 17.6911L7.36836 16.1995C7.77956 15.7883 8.44875 15.7883 8.85996 16.1995L9.60396 16.9435L7.33046 19.2206C6.91883 19.6329 6.91939 20.3007 7.33165 20.7122C7.74384 21.1238 8.4117 21.1233 8.82325 20.711C8.86277 20.6717 18.4635 11.0557 18.6684 10.8505Z" />
+            <path
+              d="M25.5556 21.4419C26.2999 20.9776 26.9941 20.4253 27.619 19.8004C32.1465 15.273 32.1469 7.92053 27.619 3.39272C23.0955 -1.13087 15.735 -1.13094 11.2113 3.39272C9.08281 5.52123 7.87859 8.35466 7.82051 11.3712C7.80926 11.9536 8.27229 12.4348 8.85471 12.446C9.43551 12.4557 9.9183 11.9942 9.92955 11.4118C9.97708 8.94341 10.9621 6.62525 12.7029 4.88439C16.404 1.18327 22.4263 1.1832 26.1274 4.88439C29.8305 8.58747 29.8308 14.6055 26.1274 18.3088C25.6157 18.8206 25.0477 19.2725 24.4392 19.6521C23.9449 19.9603 23.7942 20.6109 24.1024 21.1052C24.4098 21.5979 25.06 21.751 25.5556 21.4419Z" />
+            <path
+              d="M23.1414 16.8174C23.5532 17.2293 24.2211 17.2293 24.633 16.8174C27.5116 13.9387 27.5116 9.25474 24.633 6.37603C21.7477 3.49079 17.0774 3.49029 14.1917 6.37603C13.7798 6.78794 13.7798 7.45572 14.1917 7.86763C14.6036 8.27954 15.2714 8.27947 15.6833 7.86763C17.7442 5.80676 21.0802 5.80641 23.1414 7.86763C25.1976 9.92379 25.1976 13.2695 23.1414 15.3257C22.7295 15.7377 22.7295 16.4055 23.1414 16.8174Z" />
+          </svg>
+          Физиотерапия
+        </button>
+        <button class="btn-reset services-tabs__btn" role="tab" aria-selected="true" aria-controls="services-panel-7" id="services-tab-7" tabindex="-1" data-js-tabs-button>
+          <svg class="services-tabs__btn-icon" width="36" height="32" viewBox="0 0 36 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.0393506 15.7786L4.2581 0.76965C4.42059 0.191682 5.03273 -0.134357 5.60304 0.0531661C8.42292 0.980799 10.0053 3.94686 9.20543 6.8057L7.37259 13.3564C9.28453 12.7219 11.5282 13.227 12.9718 14.921L18 20.8213L23.0282 14.921C24.467 13.2326 26.7078 12.7193 28.6274 13.3563L26.7946 6.80563C25.9947 3.94679 27.5771 0.980729 30.397 0.0530958C30.9671 -0.134498 31.5794 0.191611 31.7419 0.76958L35.9607 15.7785C36.0526 16.1058 35.9813 16.4573 35.7689 16.7227L27.5625 26.9807V30.6601C27.5625 31.2425 27.0903 31.7147 26.5079 31.7147C25.9254 31.7147 25.4532 31.2425 25.4532 30.6601V26.6108C25.4532 26.3713 25.5347 26.1389 25.6843 25.9519L33.7834 15.828L30.0589 2.57731C28.9623 3.40412 28.4354 4.84145 28.8259 6.23729L31.1434 14.5198C31.3457 15.2428 30.76 15.6362 30.6467 15.8205C30.5941 15.8974 31.0138 15.4006 24.4525 23.0819C24.4454 23.0864 24.0066 23.6162 23.3318 23.4031C22.6183 23.1773 22.3556 22.2901 22.8478 21.7129C22.8539 21.7058 22.8707 21.686 22.8646 21.6932L28.1939 15.4456C27.0216 14.9477 25.557 15.2055 24.6337 16.2891L19.0547 22.8358V30.6601C19.0547 31.2425 18.5825 31.7147 18 31.7147C17.4176 31.7147 16.9454 31.2425 16.9454 30.6601V22.8358L11.3663 16.2892C10.4437 15.2064 8.97937 14.9473 7.80614 15.4457C8.10518 15.7963 12.8438 21.3514 13.1518 21.7124C13.5298 22.1556 13.4775 22.8219 13.0344 23.1998C12.5914 23.5777 11.9261 23.5251 11.548 23.0824C5.02774 15.4452 5.41819 15.9152 5.3535 15.8207C5.24536 15.6447 4.65586 15.2377 4.85674 14.5198L7.1741 6.23729C7.56469 4.84138 7.03769 3.40412 5.9411 2.57731L2.21658 15.828L10.3158 25.952C10.4654 26.139 10.5469 26.3713 10.5469 26.6108V30.6601C10.5469 31.2426 10.0747 31.7148 9.49223 31.7148C8.90977 31.7148 8.43755 31.2426 8.43755 30.6601V26.9808L0.231163 16.7228C0.0187488 16.4573 -0.0526181 16.1058 0.0393506 15.7786Z" />
+            <path
+              d="M18.7049 13.4058C18.2931 13.8177 17.6252 13.8178 17.2133 13.4058L12.6432 8.83573C11.2388 7.43138 11.2385 5.15783 12.6432 3.75319C14.0444 2.35194 16.3245 2.35186 17.7258 3.75319L17.9591 3.98649L18.1924 3.75319C19.5937 2.35201 21.8736 2.35201 23.2749 3.75319C24.6793 5.15755 24.6796 7.4311 23.2749 8.83573L18.7049 13.4058ZM21.7834 5.2448C21.2045 4.66599 20.2628 4.66599 19.684 5.2448L18.7049 6.2239C18.2931 6.63579 17.6252 6.63579 17.2133 6.2239L16.2342 5.24487C15.6554 4.66599 14.7137 4.66606 14.1348 5.24487C13.556 5.82369 13.556 6.76545 14.1348 7.34433L17.9591 11.1686L21.7835 7.34433C22.3622 6.76538 22.3622 5.82362 21.7834 5.2448Z" />
+          </svg>
+          Реабилитация
+        </button>
+        <button class="btn-reset services-tabs__btn" role="tab" aria-selected="true" aria-controls="services-panel-8" id="services-tab-8" tabindex="-1" data-js-tabs-button>
+          <svg class="services-tabs__btn-icon" width="30" height="34" viewBox="0 0 30 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.3515 20.6429C17.3515 19.9726 17.8782 19.4286 18.5272 19.4286C19.1762 19.4286 19.7029 19.9726 19.7029 20.6429C19.7029 21.3131 19.1762 21.8571 18.5272 21.8571C17.8782 21.8571 17.3515 21.3131 17.3515 20.6429Z" />
+            <path
+              d="M13.8243 12.1429C13.8243 11.4726 14.351 10.9286 15 10.9286C15.649 10.9286 16.1757 11.4726 16.1757 12.1429C16.1757 12.8131 15.649 13.3571 15 13.3571C14.351 13.3571 13.8243 12.8131 13.8243 12.1429Z" />
+            <path
+              d="M9.12136 18.8214C9.12136 17.816 9.91146 17 10.885 17C11.8585 17 12.6486 17.816 12.6486 18.8214C12.6486 19.8269 11.8585 20.6429 10.885 20.6429C9.91146 20.6429 9.12136 19.8269 9.12136 18.8214Z" />
+            <path
+              d="M0.58789 22.7897C0.0258908 23.1249 -0.166929 23.868 0.157572 24.4484L1.3333 26.5516C1.65663 27.1296 2.375 27.3324 2.93935 26.996C3.50135 26.6609 3.69417 25.9177 3.36967 25.3373L5.4707 24.0841C6.19613 25.1211 7.0744 26.0331 8.07377 26.7896L6.97446 28.4592C6.60881 29.0141 6.74872 29.7694 7.28485 30.1459C7.82099 30.5223 8.55229 30.3814 8.91794 29.8253L10.1031 28.0245C11.2576 28.5734 12.5063 28.9449 13.8243 29.0809V31.5714C13.1753 31.5714 12.6485 32.1154 12.6485 32.7857C12.6485 33.456 13.1753 34 13.8243 34H16.1757C16.8247 34 17.3515 33.456 17.3515 32.7857C17.3515 32.1154 16.8247 31.5714 16.1757 31.5714V29.0809C17.4937 28.9449 18.7424 28.5746 19.8969 28.0245L21.0821 29.8253C21.4489 30.3814 22.179 30.5223 22.7151 30.1459C23.2525 29.7682 23.3912 29.0141 23.0255 28.4592L21.9262 26.7896C22.9256 26.0331 23.8039 25.1211 24.5293 24.0841L26.6303 25.3373C26.3058 25.9189 26.4986 26.6609 27.0606 26.996C27.625 27.3311 28.3434 27.1284 28.6667 26.5516L29.8424 24.4484C30.1669 23.8668 29.9741 23.1249 29.4121 22.7897C28.8466 22.4534 28.1306 22.6537 27.8061 23.2341L25.7097 21.9834C26.2223 20.8116 26.5692 19.5464 26.6973 18.2143H27.933C28.582 18.2143 29.1088 17.6703 29.1088 17C29.1088 16.3297 28.582 15.7857 27.933 15.7857H26.6973C26.5692 14.4524 26.2223 13.1884 25.7097 12.0166L27.8061 10.7659C28.1341 11.3499 28.8525 11.543 29.4121 11.2103C29.9741 10.8751 30.1669 10.132 29.8424 9.55157L28.6667 7.44843C28.341 6.86679 27.6226 6.66764 27.0606 7.004C26.4986 7.33914 26.3058 8.08228 26.6303 8.66271L24.5293 9.91586C23.8039 8.87886 22.9256 7.96693 21.9262 7.21043L23.0255 5.54079C23.3912 4.98586 23.2513 4.23057 22.7151 3.85414C22.1778 3.4765 21.4465 3.621 21.0821 4.17472L19.8969 5.97429C18.7424 5.42543 17.4937 5.05386 16.1757 4.91907V2.42857C16.8247 2.42857 17.3515 1.88457 17.3515 1.21429C17.3515 0.544 16.8247 0 16.1757 0H13.8243C13.1753 0 12.6485 0.544 12.6485 1.21429C12.6485 1.88457 13.1753 2.42857 13.8243 2.42857V4.91907C12.5063 5.05507 11.2576 5.42543 10.1031 5.9755L8.91794 4.17472C8.55347 3.621 7.82216 3.4765 7.28485 3.85414C6.74754 4.23057 6.60763 4.98464 6.97329 5.53957L8.07259 7.20921C7.07322 7.96571 6.19495 8.87764 5.46952 9.91464L3.36967 8.66271C3.69417 8.08107 3.50135 7.33914 2.93935 7.004C2.375 6.66764 1.65781 6.868 1.3333 7.44843L0.157572 9.55157C-0.166929 10.1332 0.0258908 10.8751 0.58789 11.2103C1.14754 11.543 1.86591 11.3499 2.19394 10.7659L4.29027 12.0166C3.77647 13.1884 3.43081 14.4524 3.30265 15.7857H2.06696C1.41796 15.7857 0.891229 16.3297 0.891229 17C0.891229 17.6703 1.41796 18.2143 2.06696 18.2143H3.30265C3.43081 19.5476 3.77765 20.8116 4.29027 21.9834L2.19394 23.2341C1.86709 22.6525 1.15107 22.4534 0.58789 22.7897ZM15 7.28571C20.1861 7.28571 24.4058 11.6438 24.4058 17C24.4058 22.3562 20.1861 26.7143 15 26.7143C9.81385 26.7143 5.59415 22.3562 5.59415 17C5.59415 11.6438 9.81385 7.28571 15 7.28571Z" />
+          </svg>
+          Covid-Реабилитация
+        </button>
+      </div>
+    </div>
+    <div class="services__content">
+      <div class="services-tabs-content is-active" id="services-panel-1" role="tabpanel" tabindex="0" aria-labelledby="services-tab-1" data-js-tabs-content>
+        <ul class="list-reset services__list list-services">
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ органов брюшной полости
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ печени, желчного пузыря, поджелудочной железы, селезенки
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ печени
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ поджелудочной железы
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ надпочечников
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ почек, надпочечников
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist list-services__sublist--smaller-gap">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ желчного пузыря с определением функции
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ желудка с контрастированием
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ толстого кишечника
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ желудка ребенку
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ мочевого пузыря и предстательной&nbsp;железы
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist list-services__sublist--smaller-gap">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ предстательной железы
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Трансректальное УЗИ (ТРУЗИ)
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ матки и придатков
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ шейки матки
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ при беременности
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  УЗИ молочных желез
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="services-tabs-content" id="services-panel-2" role="tabpanel" tabindex="0" aria-labelledby="services-tab-2" data-js-tabs-content>
+        <ul class="list-reset services__list list-services">
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Спирометрия
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Электрокардиография (ЭКГ)
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Холтеровское мониторирование ЭКГ
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Велоэргометрия (ВЭМ)
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="services-tabs-content" id="services-panel-3" role="tabpanel" tabindex="0" aria-labelledby="services-tab-3" data-js-tabs-content>
+        <ul class="list-reset services__list list-services">
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-аллерголога
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача психиатра, психотерапевта
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Приём врача-онколога
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-кардиолога
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-хирурга
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-оториноларинголога
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-терапевта
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-физиотерапевта
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-маммолога
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Приём врача-уролога
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-пульмонолога
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-нейрохирурга
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-хирурга-эндокринолога
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-гастроэнтеролога
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-невролога
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-эндокринолога
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-сосудистого хирурга
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-нефролога
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Прием врача-травматолога-ортопеда
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="services-tabs-content" id="services-panel-4" role="tabpanel" tabindex="0" aria-labelledby="services-tab-4" data-js-tabs-content>
+        <ul class="list-reset services__list list-services">
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Хирургические манипуляции
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Пункция молочной железы
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Пункция тазобедренного сустава
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Неврологические блокады под УЗИ-навигацией
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Трепанбиопсии поверхностно расположенных органов
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Пункция коленного сустава
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Пункция мягких тканей
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Пункция щитовидной железы
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Пункции суставов под контролем УЗИ
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Пункции поверхностно расположенных органов
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Пункция лимфоузлов
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Пункция плечевого сустава
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Малоинвазивные вмешательства на щитовидной железе
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Пункции поверхностно расположенных структур опорно-двигательного аппарата
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="services-tabs-content" id="services-panel-5" role="tabpanel" tabindex="0" aria-labelledby="services-tab-5" data-js-tabs-content>
+        <ul class="list-reset services__list list-services">
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Биохимическое исследование крови
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Гормональные исследования крови
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Анализы крови на онкомаркеры
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Иммунологическое исследование крови
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Анализы на гепатит
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Анализ крови на ретикулоциты
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Анализы на бактериальные инфекции
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Анализы на вирусные инфекции
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Анализ крови на медь
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Анализ крови на фосфор
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Анализ крови на гемоглобин
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Анализ крови на витамин В12
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="services-tabs-content" id="services-panel-6" role="tabpanel" tabindex="0" aria-labelledby="services-tab-6" data-js-tabs-content>
+        <ul class="list-reset services__list list-services">
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Ударно-волновая терапия
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Дыхательный тренажер «Карбоник»
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Магнитолазерная терапия
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Ультразвуковая терапия
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="services-tabs-content" id="services-panel-7" role="tabpanel" tabindex="0" aria-labelledby="services-tab-7" data-js-tabs-content>
+        <ul class="list-reset services__list list-services">
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Электрокардиография (ЭКГ)
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Спирометрия
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Велоэргометрия (ВЭМ)
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Холтеровское мониторирование ЭКГ
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="services-tabs-content" id="services-panel-8" role="tabpanel" tabindex="0" aria-labelledby="services-tab-8" data-js-tabs-content>
+        <ul class="list-reset services__list list-services">
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Магнитолазерная терапия
+                </a>
+              </li>
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Ударно-волновая терапия
+                </a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Дыхательный тренажер «Карбоник»
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-services__item">
+            <ul class="list-reset list-services__sublist">
+              <li class="list-services__subitem">
+                <a href="#!" class="link list-services__sublink">
+                  Ультразвуковая терапия
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,137 @@
+@use "@/scss/helpers" as *;
+
+.about {
+  margin-top: -245px;
+  padding-top: fluid(270, 426);
+  padding-bottom: fluid(70, 172.5);
+  background-image: url('@/assets/img/about-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @include max-576 {
+    margin-top: -205px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include max-1200 {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  &__content {
+    flex: 0 0 calc(680 / 1240 * 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include max-1200 {
+      // width: 100%;
+      flex-basis: 100%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: fluid(28, 42);
+    line-height: 1.14;
+    color: var(--col-white);
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 585px;
+    font-weight: 400;
+    font-size: fluid(16, 18);
+    line-height: 1.55;
+    color: var(--col-white);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__mission {
+    flex: 0 0 calc(483 / 1240 * 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    margin-right: 22px;
+
+    @include max-1600 {
+      margin-right: 0;
+    }
+
+    @include max-1200 {
+      flex-direction: column-reverse;
+      gap: 40px;
+      flex-basis: 100%;
+    }
+  }
+
+  &__play-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fluid-mobile(75, 95);
+    height: fluid-mobile(75, 95);
+    border-radius: 50%;
+    color: var(--col-green-1);
+    background-color: var(--col-white);
+    transform-style: preserve-3d;
+    transition: color var(--anim-normal);
+
+    @include hover {
+      color: var(--col-dark-1);
+    }
+
+    @include max-1200 {
+      align-self: center;
+    }
+
+    &::before {
+      display: block;
+      content: '';
+      width: fluid(85, 105);
+      height: fluid(85, 105);
+      background-color: var(--col-white);
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      translate: -50% -50%;
+      transform: translateZ(-1px);
+
+      animation: pulse 3s infinite;
+    }
+  }
+
+  &__mission-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: fluid(24, 28, 1200, 1600);
+    line-height: 1.36;
+    color: var(--col-white);
+
+    @include max-1200 {
+      font-size: fluid(18, 24, 320, 1200);
+    }
+  }
+}
+
+.about-accent-text {
+  color: var(--col-green-2);
+}

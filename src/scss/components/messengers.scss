@@ -1,0 +1,50 @@
+@use "@/scss/helpers" as *;
+
+.messengers {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: var(--col-dark-1);
+    background-color: transparent;
+    transition: color var(--anim-normal);
+
+    &--white-bg {
+      background-color: var(--col-white);
+    }
+
+    &--border {
+      border: 1px solid var(--col-grey-1);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--col-blue-1);
+      border-radius: 50%;
+    }
+
+    @include hover {
+      color: var(--col-green-1);
+    }
+
+    &:active {
+      color: var(--col-active-1);
+    }
+  }
+}

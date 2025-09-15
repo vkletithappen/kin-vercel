@@ -1,0 +1,11 @@
+@use "@/scss/helpers" as *;
+
+.yandex-map {
+  display: block;
+  width: 100%;
+  height: 622px;
+
+  @include max-1024 {
+    height: 300px;
+  }
+}

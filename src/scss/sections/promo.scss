@@ -1,0 +1,168 @@
+@use "@/scss/helpers" as *;
+
+.promo {
+  padding-top: 68px;
+  margin-bottom: 59.5px;
+
+  &__caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    @include max-768 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    flex: 0 0 calc(700 / 1240 * 100%);
+  }
+}
+
+.list-promo {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+
+  &__item {
+    position: relative;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    padding-left: 20px;
+    min-height: 187px;
+    border-radius: 12px;
+    background-image: url('@/assets/img/promo-bg-1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    transition: box-shadow var(--anim-normal);
+
+    @include max-1024 {
+      grid-column: span 3;
+    }
+
+    @include max-768 {
+      grid-column: span 6;
+    }
+
+    @include hover {
+      box-shadow: 0 13px 30px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &--discount {
+      --back-discount: var(--col-green-1);
+
+      &::before {
+        display: block;
+        content: "-" attr(data-discount) "%";
+        font-weight: 800;
+        font-size: 16px;
+        color: var(--col-white);
+        position: absolute;
+        left: 41.5%;
+        bottom: 17%;
+        rotate: -9deg;
+        z-index: 2;
+      }
+
+      &::after {
+        display: block;
+        content: '';
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        background-color: var(--back-discount);
+        position: absolute;
+        left: 42%;
+        bottom: 11%;
+      }
+    }
+
+    &--doctor {
+      background-image: url('@/assets/img/promo-img-1.avif'), url('@/assets/img/promo-bg-1.svg');
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain, cover;
+      background-position: right bottom, center top;
+
+      @include max-1440 {
+        background-size: 90%, cover;
+      }
+
+      @include max-768 {
+        background-size: contain, cover;
+      }
+
+      @include max-576 {
+        background-image: url('@/assets/img/promo-bg-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+      }
+    }
+
+    &--functional {
+      --back-discount: var(--col-blue-1);
+      background-image: url('@/assets/img/promo-img-2.avif'), url('@/assets/img/promo-bg-violet.svg');
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain, cover;
+      background-position: right 20px bottom, center top;
+
+      @include max-1440 {
+        background-size: 60%, cover;
+        background-position: right -34px top, top center;
+      }
+
+      @include max-768 {
+        background-size: contain, cover;
+        background-position: right 20px bottom, center top;
+      }
+
+      @include max-576 {
+        background-image: url('@/assets/img/promo-bg-violet.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+      }
+    }
+
+    &--covid {
+      background-image: url('@/assets/img/promo-img-3.avif'), url('@/assets/img/promo-bg-green.svg');
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain, cover;
+      background-position: right 19px top 8px, center top;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 198px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33333;
+    color: var(--col-white);
+
+    @include max-768 {
+      max-width: 300px;
+    }
+  }
+
+  &__deadline {
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--col-white);
+  }
+
+  &__link {
+    position: absolute;
+    inset: 0;
+  }
+}

@@ -1,0 +1,115 @@
+@use "@/scss/helpers" as *;
+
+.services {
+  padding-top: fluid(50, 68);
+  padding-bottom: fluid(60, 79.5);
+  background-color: var(--col-grey-light-1);
+
+  &__title {
+    margin-bottom: 33px;
+  }
+
+  &__form {
+    margin-bottom: 35px;
+  }
+
+  &__content {
+    min-height: 351.5px;
+    padding-top: 45px;
+    padding-left: fluid(20, 51);
+    padding-bottom: 59px;
+    border-radius: 0 0 12px 12px;
+    background-color: var(--col-white);
+    background-image: url('@/assets/img/services-content-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    box-shadow: 0 5px 24px 0 rgba(85, 96, 133, 0.2);
+    transition: all 1s;
+  }
+}
+
+.form-services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  padding: 5px 11px;
+  min-height: 66px;
+  border: 1px solid #e7ebf3;
+  border-radius: 30px;
+  background-color: var(--col-white);
+  overflow: hidden;
+
+  @include max-576 {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px;
+    gap: 20px;
+    border-radius: 15px;
+  }
+
+  &__input {
+    padding-left: 18px;
+    width: 100%;
+    min-height: 46px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--col-dark-2);
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    @include max-576 {
+      border: 1px solid #e7ebf3;
+      border-radius: 30px;
+    }
+  }
+
+  &__btn {
+    flex-shrink: 0;
+
+    @include max-576 {
+      width: 100%;
+    }
+  }
+}
+
+.list-services {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px 11px;
+
+  &__item {
+    grid-column: span 2;
+    padding-right: fluid(24, 36);
+
+    @include max-1200 {
+      grid-column: span 3;
+    }
+
+    @include max-768 {
+      grid-column: span 6;
+    }
+  }
+
+  &__sublist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    &--smaller-gap {
+      gap: 12px;
+    }
+  }
+
+  &__sublink {
+    font-weight: 400;
+    font-size: fluid-mobile(16, 18);
+    line-height: 1.33;
+    color: var(--col-dark-2);
+    text-align: left;
+  }
+}

@@ -1,0 +1,96 @@
+@use "@/scss/helpers" as *;
+
+.table-tabs {
+
+  &__tablist {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    --webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include max-1200 {
+      overflow-x: auto;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 0px;
+    min-height: 42px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: fluid(13, 15);
+    color: var(--col-dark-2);
+    background-color: transparent;
+
+    white-space: nowrap;
+    transition: padding var(--anim-normal), color var(--anim-normal), background-color var(--anim-normal);
+
+    @include max-1200 {
+      flex: 0 0 auto;
+      padding: 5px 10px;
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      width: 14px;
+      height: 8px;
+      background-image: url('@/assets/img/advs-icon.svg');
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 32px;
+      top: 50%;
+      translate: 0 -50%;
+      opacity: 0;
+      transition: opacity var(--anim-normal), right var(--anim-normal);
+
+      @include max-1440 {
+        display: none;
+      }
+
+    }
+
+    &.is-active {
+      padding-left: 21px;
+      color: var(--col-blue-1);
+      background-color: var(--col-white);
+      pointer-events: none;
+
+      @include max-1200 {
+        padding-left: 10px;
+        border-radius: 10px 10px 0 0;
+      }
+
+      &::after {
+        opacity: 1;
+        right: 16px;
+      }
+    }
+
+    @include hover {
+      color: var(--col-green-1);
+    }
+  }
+
+  &-content {
+    display: none;
+    animation: appearanceFromBottom 0.5s ease-in-out;
+
+    &.is-active {
+      display: block;
+    }
+  }
+}

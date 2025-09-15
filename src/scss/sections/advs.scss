@@ -1,0 +1,101 @@
+@use "@/scss/helpers" as *;
+
+.advs {
+  padding-top: 58px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 24px 24px 24px 28px;
+    border-radius: 12px;
+    background-color: var(--col-grey-light-1);
+
+    @include max-1200 {
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    @include max-768 {
+      padding: 10px;
+    }
+  }
+
+  &__tabs {
+    padding-top: 3px;
+    flex: 0 0 calc(289 / 1240 * 100%);
+
+    @include max-1200 {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    flex: 0 0 calc(918 / 1240 * 100%);
+    border-radius: 12px;
+    box-shadow: 0 5px 24px 0 rgba(85, 96, 133, 0.2);
+    background: var(--col-white);
+
+    @include max-1200 {
+      width: 100%;
+      border-radius: 0 0 12px 12px;
+    }
+  }
+
+  &__card {
+    padding: 79px 69px 40px 80px;
+    min-height: 482.5px;
+
+    @include max-1024 {
+      padding: 50px 50px 30px 50px;
+    }
+
+    @include max-768 {
+      padding: 35px fluid-mobile(15, 30) 30px fluid-mobile(15, 30);
+      min-height: 380.3px;
+    }
+  }
+}
+
+.card-advs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url('@/assets/img/advs-decor-1.svg');
+  background-repeat: no-repeat;
+  background-position: right -24px top 36px;
+
+  @include max-1024 {
+    background-image: none;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 21px;
+    font-weight: 400;
+    font-size: fluid(24, 36);
+    color: var(--col-dark-1);
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 28px;
+    max-width: 481px;
+    font-weight: 400;
+    font-size: fluid(14, 15);
+    line-height: 1.6;
+    color: var(--col-dark-2);
+  }
+
+  &__secondary-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.85;
+    color: var(--col-grey-1);
+  }
+}

@@ -1,0 +1,30 @@
+@use "@/scss/helpers" as *;
+
+.base-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--col-blue-1);
+  transition: color var(--anim-normal);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--col-blue-1);
+    border-radius: 12px;
+    outline-offset: 5px;
+  }
+
+  @include hover {
+    color: var(--col-green-1);
+  }
+
+  &:active {
+    color: var(--col-active-1);
+  }
+}

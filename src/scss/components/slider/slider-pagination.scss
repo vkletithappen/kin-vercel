@@ -1,0 +1,20 @@
+@use "@/scss/helpers" as *;
+
+.slider-pagination {
+  min-width: 38px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--col-grey-1);
+
+  @include max-1200 {
+    display: none;
+  }
+
+  &--reviews {
+    display: block;
+
+    @include max-1024 {
+      display: none;
+    }
+  }
+}

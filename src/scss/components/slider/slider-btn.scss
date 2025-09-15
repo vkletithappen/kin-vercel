@@ -1,0 +1,16 @@
+@use "@/scss/helpers" as *;
+
+.slider-btn {
+  @include flex-center(true);
+  width: 48px;
+  height: 48px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  color: var(--col-dark-2);
+  transition: color var(--anim-normal), background-color var(--anim-normal);
+
+  @include hover {
+    background-color: var(--col-dark-2);
+    color: var(--col-white);
+  }
+}

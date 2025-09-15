@@ -1,0 +1,100 @@
+@use "@/scss/helpers" as *;
+
+.nav {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    &--menu {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__item {
+    &--dropdown {
+      position: relative;
+
+      &:last-child {
+        & .nav__dropdown {
+          left: auto;
+          right: 0;
+        }
+      }
+
+      @include hover {
+        .nav__dropdown {
+          max-height: 500px;
+          opacity: 1;
+          transform: translateY(0);
+          pointer-events: auto;
+        }
+
+        .nav__link--dropdown {
+          color: var(--col-green-1);
+        }
+
+        .nav__link-icon {
+          rotate: -180deg;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--col-dark-1);
+    transition: color var(--anim-normal);
+
+    &--dropdown {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+
+  &__link-icon {
+    transition: rotate var(--anim-normal);
+  }
+
+  &__dropdown {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 100%;
+    pointer-events: none;
+  }
+}
+
+.dropdown-nav {
+  background-color: var(--col-white);
+  border-radius: 12px;
+  border-bottom: 5px solid var(--col-green-1);
+
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    white-space: nowrap;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--col-dark-1);
+    transition: color var(--anim-normal);
+  }
+}

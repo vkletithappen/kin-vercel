@@ -1,0 +1,77 @@
+@use "@/scss/helpers" as *;
+
+.slider-tabs {
+  width: fit-content;
+
+  @include max-576 {
+    width: 100%;
+  }
+
+  &__tablist {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    min-height: 46px;
+    border-radius: 30px;
+    background-color: var(--col-grey-light-1);
+
+    --webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include max-768 {
+      overflow-x: auto;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    border-radius: 30px;
+    padding: 0px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--col-dark-2);
+    background-color: transparent;
+    transition: color var(--anim-normal);
+    white-space: nowrap;
+
+    &.is-active {
+      color: var(--col-blue-1);
+      pointer-events: none;
+    }
+
+    @include hover {
+      color: var(--col-green-1);
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 0;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 3px 5px 0 rgba(85, 96, 133, 0.2);
+    transition: transform 0.3s ease, width 0.3s ease;
+    z-index: 0;
+  }
+
+  &-content {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@use "@/scss/helpers" as *;
+
+.section-form {
+  padding-top: fluid(50, 124);
+  padding-bottom: fluid(60, 195);
+  background-image: url('@/assets/img/section-form-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

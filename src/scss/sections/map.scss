@@ -1,0 +1,162 @@
+@use "@/scss/helpers" as *;
+
+.map {
+  position: relative;
+  overflow: hidden;
+
+  &__container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 3;
+    pointer-events: none;
+
+    @include max-1024 {
+      position: static;
+      translate: 0 0;
+    }
+  }
+
+  &__content {
+    pointer-events: all;
+  }
+}
+
+.content-map {
+  width: 100%;
+  max-width: 505px;
+  border-radius: 12px;
+  box-shadow: 0 5px 24px 0 rgba(85, 96, 133, 0.2);
+  background: var(--col-white);
+  overflow: hidden;
+
+  @include max-1024 {
+    max-width: 100%;
+    border-radius: 0px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 44px 44px 44px 40px;
+    background-color: var(--col-grey-light-1);
+
+    @include max-576 {
+      flex-direction: column;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+  }
+
+  &__phone {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--col-dark-1);
+  }
+
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    padding: 27px 40px;
+    border-bottom: 1px solid var(--col-grey-light-2);
+
+    @include max-576 {
+      padding: 24px;
+    }
+  }
+
+  &__address {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--col-dark-2);
+  }
+
+  &__schedulde {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--col-grey-1);
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 27px;
+    padding-left: 40px;
+    padding-bottom: 45px;
+    padding-right: 30px;
+  }
+
+  &__stop-name {
+    margin-bottom: 27px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--col-dark-2);
+  }
+}
+
+.list-map {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+
+    @include max-576 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
+
+  &__vehicle-type {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--col-grey-1);
+  }
+
+  &__sublist {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    max-width: 186px;
+
+    &--bus {
+      left: 25px;
+
+      @include max-576 {
+        left: 0;
+      }
+    }
+
+    &--cabs {
+      left: 11px;
+
+      @include max-576 {
+        left: 0;
+      }
+    }
+  }
+
+  &__subitem {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 4px;
+    height: 18px;
+    border-radius: 3px;
+    background-color: var(--col-grey-light-1);
+    color: var(--col-dark-2);
+  }
+}

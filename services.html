@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Услуги клиники Профессора Кинзерского</title>
+  <meta name="description" content="Description text">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body class="page__body">
+  {{> header-inner }}
+  <main class="main">
+  </main>
+  {{> footer }}
+  <button class="btn-reset btn-to-top" data-js-btn-to-top>
+    <svg width="22" height="12" viewBox="0 0 22 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.7225 11.7211C22.0925 11.3494 22.0925 10.7467 21.7225 10.375L11.6702 0.278791C11.3007 -0.0922226 10.7023 -0.0929198 10.3319 0.276641L10.3298 0.278791C10.3251 0.283438 10.3208 0.288144 10.3161 0.292908L0.277656 10.375C-0.0925527 10.7468 -0.0925527 11.3495 0.277656 11.7212C0.647867 12.0929 1.24784 12.0929 1.61805 11.7212L11.0001 2.2981L20.3821 11.7211C20.7523 12.0929 21.3523 12.0929 21.7225 11.7211Z" />
+    </svg>
+  </button>
+  <div class="backdrop" data-dialog-backdrop="appoinment"></div>
+  <dialog class="dialog" aria-label="Запись на прием" data-dialog="appoinment" tabindex="-1">
+    <div class="dialog__inner" data-dialog-inner>
+      <form action="#!" class="cta-form cta-form--dialog">
+        <h3 class="cta-form__title">Запись на прием</h3>
+        <fieldset class="cta-form__fieldset">
+          <div class="cta-form__field">
+            <input class="input-reset cta-form__input" id="dialog-appoinment-name" placeholder autocomplete="on">
+            <label class="cta-form__label" for="dialog-appoinment-name">Введите имя</label>
+          </div>
+          <div class="cta-form__field">
+            <input class="input-reset cta-form__input" id="dialog-appoinment-phone" type="tel" placeholder required autocomplete="on">
+            <label class="cta-form__label" for="dialog-appoinment-phone">Введите телефон *</label>
+          </div>
+          <div class="cta-form__field">
+            <input class="input-reset cta-form__input cta-form__input--date" id="dialog-appoinment-date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder>
+            <label class="cta-form__label" for="dialog-appoinment-date">Введите дату приема</label>
+          </div>
+          <div class="cta-form__field">
+            <input class="input-reset cta-form__input" id="dialog-appoinment-email" type="email" placeholder autocomplete="on">
+            <label class="cta-form__label" for="dialog-appoinment-email">Введите e-mail</label>
+          </div>
+        </fieldset>
+        <div class="cta-form__bottom">
+          <span class="cta-form__policy">Нажимая кнопку «Записаться на прием» вы соглашаетесь
+            с условиями обработки персональных данных</span>
+          <button class="btn-reset btn btn--white-bg cta-form__btn">Записаться на прием</button>
+        </div>
+      </form>
+      <button class="btn-reset dialog__close" data-dialog-close>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1024 1024" fill="currentColor">
+          <path
+            d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm181.008-630.016c-12.496-12.496-32.752-12.496-45.248 0L512 466.752l-135.76-135.76c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248L466.736 512l-135.76 135.76c-12.496 12.48-12.496 32.769 0 45.249c12.496 12.496 32.752 12.496 45.264 0L512 557.249l135.76 135.76c12.496 12.496 32.752 12.496 45.248 0c12.496-12.48 12.496-32.769 0-45.249L557.248 512l135.76-135.76c12.512-12.512 12.512-32.768 0-45.248z" />
+        </svg>
+      </button>
+    </div>
+  </dialog>
+  <div class="backdrop" data-dialog-backdrop="callback"></div>
+  <dialog class="dialog" aria-label="Заказать звонок" data-dialog="callback" tabindex="-1">
+    <div class="dialog__inner" data-dialog-inner>
+      <form action="#!" class="cta-form cta-form--dialog">
+        <h3 class="cta-form__title">Заказать звонок</h3>
+        <fieldset class="cta-form__fieldset">
+          <div class="cta-form__field">
+            <input class="input-reset cta-form__input" id="dialog-callback-name" placeholder autocomplete="on">
+            <label class="cta-form__label" for="dialog-callback-name">Введите имя</label>
+          </div>
+          <div class="cta-form__field">
+            <input class="input-reset cta-form__input" id="dialog-callback-phone" type="tel" placeholder required autocomplete="on">
+            <label class="cta-form__label" for="dialog-callback-phone">Введите телефон *</label>
+          </div>
+        </fieldset>
+        <div class="cta-form__bottom">
+          <span class="cta-form__policy">Нажимая кнопку «Записаться на прием» вы соглашаетесь
+            с условиями обработки персональных данных</span>
+          <button class="btn-reset btn btn--white-bg cta-form__btn">Заказать звонок</button>
+        </div>
+      </form>
+      <button class="btn-reset dialog__close" data-dialog-close>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1024 1024" fill="currentColor">
+          <path
+            d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm181.008-630.016c-12.496-12.496-32.752-12.496-45.248 0L512 466.752l-135.76-135.76c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248L466.736 512l-135.76 135.76c-12.496 12.48-12.496 32.769 0 45.249c12.496 12.496 32.752 12.496 45.264 0L512 557.249l135.76 135.76c12.496 12.496 32.752 12.496 45.248 0c12.496-12.48 12.496-32.769 0-45.249L557.248 512l135.76-135.76c12.512-12.512 12.512-32.768 0-45.248z" />
+        </svg>
+      </button>
+    </div>
+  </dialog>
+  <div class="overlay" data-js-overlay></div>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+@use "@/scss/helpers" as *;
+
+.footer {
+
+  &__payments {
+    padding-right: 103px;
+
+    @include max-1440 {
+      padding-right: 0;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 23px;
+    padding-bottom: 24px;
+  }
+
+  &__disclaimer {
+    display: block;
+    font-family: var(--ff-2);
+    font-weight: 400;
+    font-size: fluid(20, 24);
+    line-height: 1;
+    color: rgb(29, 33, 40, 0.2);
+    text-align: center;
+  }
+}
+
+
+.top-footer {
+  padding-top: fluid(60, 78);
+  background-color: var(--col-grey-light-1);
+
+  &__list {
+    margin-bottom: fluid(50, 74);
+  }
+
+  &__middle {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    margin-bottom: fluid(50, 71);
+
+    @include max-1024 {
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    @include max-768 {
+      flex-direction: column;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 44.5px;
+
+    @include max-768 {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
+
+.list-top-footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+
+  @include max-1024 {
+    gap: 40px 0;
+  }
+
+  &__item {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include max-1024 {
+      grid-column: span 3;
+    }
+
+    @include max-576 {
+      grid-column: span 6;
+    }
+
+    &--second {
+      position: relative;
+      left: -63px;
+
+      @include max-1440 {
+        left: 0;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--col-dark-2);
+  }
+
+  &__sublist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9.5px;
+    width: 100%;
+
+    &--grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+    }
+  }
+
+  &__subitem {
+    width: 100%;
+
+    &--address {
+      padding-top: 26px;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--col-dark-2);
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+
+    @include max-1440 {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__phone-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+  }
+
+  &__phone {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--col-dark-2);
+  }
+
+  &__phone-desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--col-dark-2);
+  }
+
+  &__btn {
+    flex-shrink: 0;
+  }
+
+  &__address {
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--col-dark-2);
+  }
+}
+
+.top-footer-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--col-grey-light-3);
+  text-align: center;
+}

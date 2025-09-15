@@ -1,0 +1,101 @@
+@use "@/scss/helpers" as *;
+
+.btn {
+  position: relative;
+  @include flex-center(true);
+  gap: 10px;
+  padding: 5px 24px;
+  min-height: 46px;
+  border-radius: 30px;
+  font-family: var(--ff-1);
+  color: var(--col-blue-1);
+  font-weight: 400;
+  font-size: 16px;
+  user-select: none;
+  transform-style: preserve-3d;
+  transition: color var(--anim-normal), border var(--anim-normal), background-color 0.6s;
+  overflow: hidden;
+
+  &__text {
+    padding-top: 2px;
+  }
+
+  &--sm {
+    min-height: 38px;
+  }
+
+  &--transparent {
+    border: 1px solid currentColor;
+    background-color: transparent;
+  }
+
+  &--white-bg {
+    background-color: var(--col-white);
+  }
+
+  &--blue-bg {
+    background-color: var(--col-blue-1);
+  }
+
+  &--blue-light-bg {
+    background-color: var(--col-blue-light-1);
+  }
+
+  &--white-text {
+    color: var(--col-white);
+  }
+
+  &--blue {
+    background-color: var(--col-blue-1);
+  }
+
+  &--dark-text {
+    color: var(--col-dark-2);
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    inset: 0;
+    border-radius: 30px;
+    content: '';
+    background-image: var(--gradient-1);
+    background-size: 170% 170%;
+    z-index: -1;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.6s ease, visibility 0s linear 0.6s;
+    animation: gradientMove 5s ease infinite;
+    pointer-events: none;
+    will-change: opacity;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--col-blue-1);
+    border-radius: 30px;
+    outline-offset: 1px;
+  }
+
+  @include hover {
+    color: var(--col-white);
+    background-color: transparent;
+    border-color: transparent;
+
+    &::before {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.6s ease;
+    }
+  }
+
+  &:active {
+    color: var(--col-dark-1);
+  }
+
+}

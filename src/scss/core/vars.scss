@@ -1,0 +1,44 @@
+@use "@/scss/helpers" as *;
+
+:root {
+  // base
+  --ff-1: "Muller", sans-serif;
+  --ff-2: "BebasNeue", sans-serif;
+  --content-width: 1240px;
+  --container-offset: #{fluid-mobile(16, 32)};
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --col-white: #fff;
+
+  --col-black-1: #222;
+
+  --col-dark-1: #003974;
+  --col-dark-1-02: rgba(0, 57, 116, 0.2);
+  --col-dark-2: #556085;
+
+  --col-blue-1: #0071bc;
+
+  --col-blue-light-1: #cee5ff;
+
+  --col-green-1: #5bc4be;
+  --col-green-2: #73ded8;
+
+  --col-grey-light-1: #f0f0f0;
+  --col-grey-light-2: #e7ebf3;
+  --col-grey-light-3: #a6b3cb;
+
+  --col-grey-1: #9a9eaa;
+  --col-grey-2: #a7b3cb;
+
+  --col-active-1: #537ee7;
+
+  --gradient-1: linear-gradient(90deg, #65c1be 0%, #0068b4 100%);
+
+  --col-overlay: rgba(32, 32, 32, 0.6);
+
+  // other
+  --anim-normal: 0.25s ease-in-out;
+  --anim-long: 0.4s ease-in-out;
+  --lh-n: 1.25;
+}

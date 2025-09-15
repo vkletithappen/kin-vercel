@@ -1,0 +1,33 @@
+<section class="section-form">
+  <h2 class="visually-hidden">Запишитесь на прием в клинику</h2>
+  <div class="container">
+    <div class="section-form__wrapper">
+      <form action="#!" class="cta-form">
+        <h3 class="cta-form__title">Запись на прием</h3>
+        <fieldset class="cta-form__fieldset">
+          <div class="cta-form__field">
+            <input class="input-reset cta-form__input" id="name" name="name" type="text" placeholder autocomplete="on">
+            <label class="cta-form__label" for="name">Введите имя</label>
+          </div>
+          <div class="cta-form__field">
+            <input class="input-reset cta-form__input" id="phone" name="phone" type="tel" placeholder required autocomplete="on">
+            <label class="cta-form__label" for="phone">Введите телефон *</label>
+          </div>
+          <div class="cta-form__field">
+            <input class="input-reset cta-form__input cta-form__input--date" id="date" name="date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder>
+            <label class="cta-form__label" for="date">Выберите дату приема</label>
+          </div>
+          <div class="cta-form__field">
+            <input class="input-reset cta-form__input" id="email" name="email" type="email" placeholder autocomplete="on">
+            <label class="cta-form__label" for="email">Введите e-mail</label>
+          </div>
+        </fieldset>
+        <div class="cta-form__bottom">
+          <span class="cta-form__policy">Нажимая кнопку «Записаться на прием» вы соглашаетесь
+            с условиями обработки персональных данных</span>
+          <button class="btn-reset btn btn--white-bg cta-form__btn" type="submit">Записаться на прием</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
